@@ -1,6 +1,15 @@
 # Final Project - Escape from CS 162
 
-**Due at 11:59pm on Wednesday, 3/20/2017**
+This was the original instructions for the assignment if more information is needed. The command line after cloning this respository should be:
+```
+make
+```
+and then:
+```
+./escape maze.txt
+```
+
+## Project Description:
 
 In this final project, you'll implement a game that combines many of the things we talked about in class this year.  The goal of the game will be to "escape" from CS 162 with a passing grade.
 
@@ -159,22 +168,6 @@ Here are some additional requirements:
 
   * Your program cannot have any memory leaks.
 
-## Reflection document
-
-In addition to your program, part of your grade for the project will be based on a reflection document you'll write about your experiences while working on your program.  Your reflection document should be named `REFLECTION.txt` and be included in your git repo.  In this document, you should talk about the *process* of writing your code.  For example, you can answer questions like these in your reflection document:
-
-  * What decisions or assumptions did you make about how to design your program?
-
-  * What was your test plan for your program?
-
-  * How did your testing work out?  What bugs did you uncover through testing?  How did you fix those bugs?
-
-  * What problems or obstacles did you run into while you were developing your program?  How did you resolve these?
-
-  * What resources were useful to you in solving problems you ran into?  Were there helpful websites or Stack Overflow posts?  What help did you get from the TAs and/or the Instructor?  Were specific parts of the course notes helpful?
-
-Be as thorough as you can when writing your reflection document.  You won't be demoing your final project with the grader, so your reflection document should provide answers to the kinds of questions you might expect your grader to ask.  If something in your program isn't working correctly, and the grader can't figure out why you made certain choices, it's likely you'll lose more points than you might have if the grader understood your design choices, so use the reflection document to make sure your grader is informed.
-
 ## Code style
 
 You must include a header comment for each source code file that contains a description of the file (including how to run the program, command line arguments, etc. if the file contains your `main()` function), your name, and the date.  Your code should be well commented, including header comments for *all* functions describing what the function does, its parameters, and any pre- and post-conditions for the function.  You should appropriately use whitespace, newlines, and indentation.
@@ -189,26 +182,3 @@ To submit your program, you need to make sure the following files are committed 
   * The `.cpp` file containing your application code.
   * All of the `.hpp` and `.cpp` files containing the interface and implementation of your classes.
   * Your `Makefile`.
-  * Your `REFLECTION.txt`.
-
-Do not commit any other files (other than the ones that were already in your repository at the start of the assignment).  A good way to check whether your assignment is submitted is to simply look at your repo on GitHub (i.e. https://github.com/OSU-CS162-W19/final-project-YourGitHubUsername).  If your files appear there before the deadline, they they are submitted.
-
-## Grading criteria
-
-Your program **MUST** compile and run on `flip.engr.oregonstate.edu`, so make sure you have tested your work there before you make your final submission, since a program that compiles and runs in one environment may not compile and run in another.  **Assignments that do not compile on `flip` will receive a grade of 0.**  If you do not have an ENGR account, you can create one at https://teach.engr.oregonstate.edu/.
-
-This assignment is worth 100 points total:
-  * 10 points: your code is appropriately commented and uses consistent and appropriate style
-  * 15 points: your `REFLECTION.txt` document thoughtfully explains your work on your project
-  * 15 points: your program correctly reads maze levels from a maze configuration file and creates corresponding `MazeLevel` objects, including error checking on the input file
-  * 10 points: the `Wall` and `OpenSpace` classes are correctly implemented and derive from the (correctly implemented) `MazeLocation` class
-  * 10 points: the `IntrepidStudent`, `TA`, and `Instructor` classes are correctly implemented and derive from the (correctly implemented) `MazePerson` class
-  * 10 points: objects of the `IntrepidStudent`, `TA`, and `Instructor` classes correctly move around the maze
-  * 5 points: climbing a ladder brings the Intrepid Student to the next level in the maze
-  * 5 points: the Intrepid Student picks up a Programming Skill when moving into a space containing one, while TAs do not affect Programming Skills
-  * 5 points: if a TA enters a space adjacent to the Intrepid Student and the TA is not appeased, the level is reset, and the Intrepid Student starts from the beginning of the level after losing all Programming Skills
-  * 5 points: demonstrating a Programming Skill appeases the TAs on the current level for 10 turns
-  * 5 points: if the Intrepid Student reaches the Instructor and holds at least 3 Programming Skills, they are allowed to escape from the maze with a passing grade; otherwise they must repeat the entire maze from the beginning
-  * 5 points: all dynamically allocated memory is correctly freed (no memory leaks)
-
-Segmentation faults and other similar errors will result in a 20 point deduction.  **Remember, you won't demo this project for a grade.**
