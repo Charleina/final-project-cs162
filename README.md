@@ -1,6 +1,6 @@
 # Final Project - Escape from CS 162
 
-This was the original instructions for the assignment if more information is needed. The command line after cloning this respository should be:
+This was the original instruction for the assignment for details on what it was supposed to be. The command line after cloning this respository should be:
 ```
 make
 ```
